@@ -13,8 +13,7 @@ FROM centos
 MAINTAINER Nicholas Anderson, nander13@gmu.edu
 
 # Add nginx official repository
-RUN echo -e "[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/\$releasever/\$basearch/\ngpgcheck=0\nenabled=1" \
-	> /etc/yum.repos.d/nginx.repo
+ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
 # Install nginx and apply updates
 RUN yum update -y
