@@ -6,6 +6,8 @@
 # Based on: https://github.com/dockerfile/nginx
 #
 
+MAINTAINER Nicholas Anderson, nander13@gmu.edu
+
 # Pull base image.
 FROM centos
 
